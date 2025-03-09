@@ -76,7 +76,7 @@ The roadmap outlines the future plans:
    - Payment integration with Stellar and cryptocurrencies.
 
 - **Q1 2025**: 
-   -  Implementation of medical records sharing and export
+   - Implementation of medical records sharing and export
 
 - **Q2 2025**: 
    - Validation of medical certifications on blockchain.
