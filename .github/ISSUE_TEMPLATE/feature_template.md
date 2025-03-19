@@ -14,12 +14,6 @@ Describe the new feature or enhancement you’re requesting. Provide as much det
 - What is the feature?
 - Why should it be added? How will it benefit users or the project?
 
-### Use cases / User Stories
-Describe specific use cases or user stories that this feature should address. This will help in understanding how the feature fits into the broader context of the project.
-
-- **Example Use Case 1**: Describe how users will interact with this feature.
-- **Example Use Case 2**: Provide specific examples of scenarios where this feature is useful.
-
 ### Expected Behavior
 What should the behavior be when this feature is implemented? Provide a detailed description of how you envision the feature working.
 
