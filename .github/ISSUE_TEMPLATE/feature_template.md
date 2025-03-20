@@ -16,7 +16,6 @@ Describe the new feature or enhancement you’re requesting. Provide as much det
 
 ### Expected Behavior
 What should the behavior be when this feature is implemented? Provide a detailed description of how you envision the feature working.
-
 - User interface changes (if applicable)
 - API changes (if applicable)
 - Changes to any workflows or interactions
