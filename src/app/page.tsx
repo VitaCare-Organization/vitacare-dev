@@ -1,5 +1,3 @@
 export default function Home() {
-  return ( 
-    <p>Base page</p>
-  );
+  return <div>Home</div>;
 }
