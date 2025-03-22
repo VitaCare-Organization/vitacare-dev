@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "@/components/organisms/Footer/Footer";
 
 export const metadata = {
   title: "VitaCare Health Portal",
@@ -14,6 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <Footer />
       </body>
     </html>
   );
