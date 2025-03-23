@@ -1,5 +1,6 @@
+import PatientRegistrationPage from "@/components/templates/patient-registration-page"
+
 export default function Home() {
-  return ( 
-    <p>Base page</p>
-  );
+  return <PatientRegistrationPage />
 }
+
