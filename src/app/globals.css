@@ -51,10 +51,6 @@ body {
   @apply bg-[#3c3c3c];
 }
 
-/* .bg-primary{
-  background-color:#0096CC;
-} */
-
 @theme{
   --color-primary:#0096CC;
 }
