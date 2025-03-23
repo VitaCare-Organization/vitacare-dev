@@ -1,5 +1,5 @@
 import "./globals.css";
-import Footer from "@/components/organisms/Footer/Footer";
+import Footer from "@/components/organisms/footer/Footer";
 
 export const metadata = {
   title: "VitaCare Health Portal",
