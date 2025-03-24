@@ -10,11 +10,22 @@ import FilterButton from "@/components/atoms/Button/FilterButton";
 import CompletedPayments from "@/components/organism/payments/CompletedPayment";
 
 import TabSwitcher from "@/components/molecules/Tapswitcher";
+import PendingPayments from "@/components/organism/payments/PendingPayment";
+
 type Payment = {
   doctor: string;
   specialty: string;
   invoiceNumber: string;
   date: string;
+  amount: number;
+};
+
+// =========pending payment===========
+type PendingPayment = {
+  doctor: string;
+  specialty: string;
+  invoice: string;
+  dueDate: string;
   amount: number;
 };
 
@@ -71,6 +82,16 @@ const PaymentsDashboard: React.FC = () => {
       invoiceNumber: "INV-2025-0196",
       date: "January 15, 2025",
       amount: 200.0,
+    },
+  ];
+
+  const pendingPayments: PendingPayment[] = [
+    {
+      doctor: "Dr. Jessica Brown",
+      specialty: "Cardiology Consultation",
+      invoice: "INV-2025-0312",
+      dueDate: "March 30, 2025",
+      amount: 120.0,
     },
   ];
 
@@ -152,12 +173,12 @@ const PaymentsDashboard: React.FC = () => {
               className="w-[350px]"
             />
 
-               {/* ========Render content based on Active tab =====   */}
+            {/* ========Render content based on Active tab =====   */}
             {activeTab === "pending" && (
-              <div>Pending payments content here</div>
+              <PendingPayments pendingPayments={pendingPayments} />
             )}
             {activeTab === "completed" && (
-          //  ==========Complete Payment Component===================//
+              //  ==========Complete Payment Component===================//
               <CompletedPayments
                 paymentsByMonth={paymentsByMonth}
                 handleShowReceipt={handleShowReceipt}
