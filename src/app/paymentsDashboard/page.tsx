@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { PlusIcon, CreditCardIcon } from "@heroicons/react/24/outline";
 import filterIcon from "@/assets/Frame.svg";
-import Navbar from "@/components/organism/navMenu/Navbar";
-import logoImage from "@/assets/SVG.svg";
 import PaymentButton from "@/components/atoms/Button/PaymentButton";
 import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
 import FilterButton from "@/components/atoms/Button/FilterButton";
@@ -89,9 +87,7 @@ const PaymentsDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* ============== Nav-Menu============== */}
-      <Navbar logo={logoImage} activePage="payments" />
-
+  
       {/* =============Main Content============== */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
