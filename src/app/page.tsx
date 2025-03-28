@@ -1,6 +1,10 @@
-import PatientRegistrationPage from "@/components/templates/patient-registration-page"
+import Hero from "@/components/organisms/Hero-section/Hero";
 
 export default function Home() {
-  return <PatientRegistrationPage />
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
