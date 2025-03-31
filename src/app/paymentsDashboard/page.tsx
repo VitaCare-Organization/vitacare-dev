@@ -152,7 +152,7 @@ const PaymentsDashboard: React.FC = () => {
                 paymentsByMonth={paymentsByMonth}
                 handleShowReceipt={handleShowReceipt}
               />
-            )}
+            
             {activeTab === "wallet" && <div>Stellar Wallet content here</div>}
           </div>
         </div>
