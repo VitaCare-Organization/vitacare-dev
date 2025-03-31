@@ -87,7 +87,7 @@ const PaymentsDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-  
+
       {/* =============Main Content============== */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
@@ -148,12 +148,6 @@ const PaymentsDashboard: React.FC = () => {
               className="w-[350px]"
             />
 
-               {/* ========Render content based on Active tab =====   */}
-            {activeTab === "pending" && (
-              <div>Pending payments content here</div>
-            )}
-            {activeTab === "completed" && (
-          //  ==========Complete Payment Component===================//
               <CompletedPayments
                 paymentsByMonth={paymentsByMonth}
                 handleShowReceipt={handleShowReceipt}
