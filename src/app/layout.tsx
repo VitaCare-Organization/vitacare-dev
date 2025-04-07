@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/organisms/footer/Footer";
@@ -23,4 +24,3 @@ export default function RootLayout({
     </html>
   )
 }
-
