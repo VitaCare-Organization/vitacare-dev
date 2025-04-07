@@ -1,6 +1,6 @@
 import BackButton from "@/components/atoms/back-button"
 import AccountHeader from "@/components/organisms/account-header"
-import RegistrationForm from "@/components/organisms/registration-form"
+import RegistrationForm from "../../organisms/forms/registration-form"
 
 export default function PatientRegistrationPage() {
   return (

@@ -1,9 +1,7 @@
 "use client"
-
 import type React from "react"
-
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/atoms/ui/button"
 import FormField from "@/components/molecules/form-field"
 import TabGroup from "@/components/molecules/tab-group"
 import { Calendar } from "lucide-react"
@@ -23,7 +21,7 @@ export default function RegistrationForm() {
   const [formError, setFormError] = useState<string | null>(null)
   const [formSuccess, setFormSuccess] = useState<boolean>(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev: UserData) => ({
       ...prev,
@@ -50,7 +48,7 @@ export default function RegistrationForm() {
         throw new Error("Password must be at least 8 characters long")
       }
 
-      const dateRegex = /^\d{2}\/\d{2}\/\d{4}$/
+      const dateRegex = /^(0[1-9]|1[0-2])\/(0[1-9]|[12]\d|3[01])\/(19|20)\d{2}$/
       if (!dateRegex.test(formData.dateOfBirth)) {
         throw new Error("Please enter a valid date in mm/dd/yyyy format")
       }
