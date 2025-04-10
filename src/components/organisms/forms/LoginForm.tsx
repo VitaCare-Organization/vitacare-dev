@@ -108,7 +108,7 @@ const LoginForm = () => {
 
           <div className="flex justify-center text-sm items-center">
             <p className="text-[#A1A1AA]">
-              Don't have an account?{" "}
+              <p>Don&apos;t have an account?</p>
               <Link className="text-sm hover:underline text-[#0096CC]" href="/">
                 Sign up
               </Link>

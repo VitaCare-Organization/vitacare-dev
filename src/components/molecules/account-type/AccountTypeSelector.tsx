@@ -1,24 +1,28 @@
 "use client";
 
-import { UseFormSetValue } from "react-hook-form";
 import { useState } from "react";
+import { UseFormSetValue, PathValue, Path } from "react-hook-form";
 
-const accountTypes = ["Patient", "Doctor", "Hospital"];
+const accountTypes = ["Patient", "Doctor", "Hospital"] as const;
 
-interface AccountTypeSelectorProps {
-  setValue: UseFormSetValue<any>;
-  selectedType?: string;
+type AccountType = (typeof accountTypes)[number];
+
+interface AccountTypeSelectorProps<T extends { accountType: AccountType }> {
+  setValue: UseFormSetValue<T>;
+  selectedType?: AccountType;
 }
 
-export default function AccountTypeSelector({
+export default function AccountTypeSelector<T extends { accountType: AccountType }>({
   setValue,
   selectedType,
-}: AccountTypeSelectorProps) {
-  const [selected, setSelected] = useState(selectedType || "");
+}: AccountTypeSelectorProps<T>) {
+  const [selected, setSelected] = useState<AccountType | "">(selectedType || "");
 
-  const handleSelect = (type: string) => {
+  const handleSelect = (type: AccountType) => {
     setSelected(type);
-    setValue("accountType", type, { shouldValidate: true });
+    setValue("accountType" as Path<T>, type as PathValue<T, Path<T>>, {
+      shouldValidate: true,
+    });
   };
 
   return (
