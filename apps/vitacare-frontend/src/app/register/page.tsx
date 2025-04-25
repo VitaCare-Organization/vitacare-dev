@@ -1,4 +1,4 @@
-import PatientRegistrationPage from "@/components/pages/patient-registration/patient-registration-page"
+import PatientRegistrationPage from "@/app/patientRegistration/page"
 
 export default function Register() {
   return <PatientRegistrationPage />

@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Payment, PaymentsByMonth } from "@/types/Payment";
-import ReceiptButton from "@/components/atoms/Button/RceiptButton";
+import ReceiptButton from "@/components/atoms/Button/ReceiptButton";
 import arrowIcon from "@/assets/Arrow.svg";
 
 

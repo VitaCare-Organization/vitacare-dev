@@ -5,10 +5,10 @@ import filterIcon from "@/assets/Frame.svg";
 import PaymentButton from "@/components/atoms/Button/PaymentButton";
 import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
 import FilterButton from "@/components/atoms/Button/FilterButton";
-import CompletedPayments from "@/components/organism/payments/CompletedPayment";
+import CompletedPayments from "@/components/organisms/CompletedPayment/CompletedPayment";
 
-import TabSwitcher from "@/components/molecules/Tapswitcher";
-import PendingPayments from "@/components/organism/payments/PendingPayment";
+import TabSwitcher from "@/components/molecules/TabsSwitcher/Tabswitcher";
+import PendingPayments from "@/components/organisms/PendingPayment/PendingPayment";
 
 type Payment = {
   doctor: string;
