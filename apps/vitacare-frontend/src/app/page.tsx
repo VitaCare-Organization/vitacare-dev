@@ -1,4 +1,4 @@
-import Hero from "@/components/organisms/Hero-section/Hero";
+import Hero from "@/components/organisms/HeroSection/Hero";
 
 export default function Home() {
   return (

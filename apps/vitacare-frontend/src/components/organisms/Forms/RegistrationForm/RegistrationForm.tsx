@@ -1,12 +1,12 @@
 "use client"
 import type React from "react"
 import { useState } from "react"
-import { Button } from "@/components/atoms/ui/button"
-import FormField from "@/components/molecules/form-field"
-import TabGroup from "@/components/molecules/tab-group"
+import { Button } from "@/components/atoms/ui/Button"
+import FormField from "@/components/molecules/FormField/FormField"
+import TabGroup from "@/components/molecules/TabGroup/TabGroup"
 import { Calendar } from "lucide-react"
 import Link from "next/link"
-import type { UserData } from "@/components/types"
+import type { UserData } from "@/components/organisms/Forms/RegistrationForm/types"
 
 export default function RegistrationForm() {
   const [formData, setFormData] = useState<UserData>({

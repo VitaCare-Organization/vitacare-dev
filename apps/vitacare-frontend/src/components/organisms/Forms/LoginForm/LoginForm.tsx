@@ -8,7 +8,7 @@ import Input from "@/components/atoms/Input/Input";
 import { Button } from "@/components/atoms/Button/Button";
 import Link from "next/link";
 import PasswordInput from "@/components/atoms/Input/PasswordInput";
-import AccountTypeSelector from "@/components/molecules/account-type/AccountTypeSelector";
+import AccountTypeSelector from "@/components/molecules/AccountType/AccountTypeSelector";
 import Image from "next/image";
 import badgeicon from "@/components/atoms/icons/badgeicon.svg";
 

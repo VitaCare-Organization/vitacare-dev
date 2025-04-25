@@ -1,8 +1,8 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/organisms/footer/Footer";
-import Navbar from "@/components/organisms/header/Header";
+import Footer from "@/components/organisms/Footer/Footer";
+import Navbar from "@/components/organisms/Header/Header";
 
 export const metadata: Metadata = {
   title: "VitaCare - Patient Registration",
