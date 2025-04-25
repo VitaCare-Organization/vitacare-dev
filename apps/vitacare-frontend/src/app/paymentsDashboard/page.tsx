@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { PlusIcon, CreditCardIcon } from "@heroicons/react/24/outline";
 import filterIcon from "@/assets/Frame.svg";
-import logoImage from "@/assets/SVG.svg";
 import PaymentButton from "@/components/atoms/Button/PaymentButton";
 import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
 import FilterButton from "@/components/atoms/Button/FilterButton";

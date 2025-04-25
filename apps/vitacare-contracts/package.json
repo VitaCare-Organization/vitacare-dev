@@ -1,0 +1,9 @@
+{
+    "name": "vitacare-contracts",
+    "scripts": {
+      "build": "stellar contract build",
+      "test": "cargo test",
+      "deploy:local": "stellar contract deploy --network standalone",
+      "deploy:futurenet": "stellar contract deploy --network futurenet"
+    }
+}
