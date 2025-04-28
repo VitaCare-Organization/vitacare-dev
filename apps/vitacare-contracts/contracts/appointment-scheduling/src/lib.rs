@@ -7,3 +7,5 @@ pub use contract::AppointmentSchedulingContract;
 pub use error::Error;
 pub use storage_types::{Appointment, AppointmentStatus};
 
+#[cfg(test)]
+mod test;
