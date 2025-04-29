@@ -23,7 +23,7 @@ interface UserData {
 }
 
 export default function RegistrationForm() {
-  const [activeTab, setActiveTab] = useState<AccountType>("Patient");
+  const [activeTab, setActiveTab] = useState<AccountType>("Hospital");
   const [formData, setFormData] = useState<UserData>({
     firstName: "",
     lastName: "",
