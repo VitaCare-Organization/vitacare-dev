@@ -6,7 +6,7 @@ import PaymentButton from "@/components/atoms/Button/PaymentButton";
 import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
 import FilterButton from "@/components/atoms/Button/FilterButton";
 import CompletedPayments from "@/components/organisms/CompletedPayment/CompletedPayment";
-
+import StellerPayment from "@/components/organisms/StellarPayment/StellerPayment";
 import TabSwitcher from "@/components/molecules/TabsSwitcher/Tabswitcher";
 import PendingPayments from "@/components/organisms/PendingPayment/PendingPayment";
 
@@ -180,7 +180,7 @@ const PaymentsDashboard: React.FC = () => {
                 handleShowReceipt={handleShowReceipt}
               />
             )}
-            {activeTab === "wallet" && <div>Stellar Wallet content here</div>}
+            {activeTab === "wallet" && <StellerPayment/>}
           </div>
         </div>
       </div>
