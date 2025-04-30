@@ -1,3 +1,10 @@
 #![no_std]
-use soroban_sdk::{contract, contractimpl, vec, Env, String, Vec};
 
+mod hospital;
+mod access_control;
+mod utils;
+
+pub use hospital::{Hospital, HospitalContract, HospitalContractClient};
+
+#[cfg(test)]
+mod test;
