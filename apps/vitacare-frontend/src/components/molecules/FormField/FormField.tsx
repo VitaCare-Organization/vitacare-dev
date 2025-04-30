@@ -38,7 +38,7 @@ export default function FormField({
           type={type}
           placeholder={placeholder}
           required={required}
-          className="w-full border-gray-300 rounded-md"
+          className="w-full border-gray-300 rounded-md outline-none" 
           value={value}
           onChange={onChange}
         />
