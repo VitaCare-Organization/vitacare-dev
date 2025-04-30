@@ -1,7 +1,7 @@
 // DoctorRegistrationPage.tsx
 "use client"; 
 import React from 'react';
-import BackButton from "../../components/atoms/Button/BAckButton";
+import BackButton from "../../components/atoms/Button/BackButton";
 import DoctorRegistrationForm from "../../components/organism/registrationForm/DoctorRegistrationForm";
 import AccountTypeSelector from "../../components/molecules/account-type/DoctorAccountTypes";
 import RegistrationHeader from "../../components/organism/accountHeader/DoctorRegistrationHeader";
@@ -18,12 +18,12 @@ type FormData = {
 const DoctorRegistrationPage = () => {
   const handleSubmit = (data: FormData) => {
     console.log(data);
-    // Add your form submission logic here
+   
   };
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <div className="max-w-7xl mx-auto p-8 sm:px-6 lg:px-8 w-full">
+      <div className="max-w-7xl mx-auto p-6 sm:px-6 lg:px-8 w-full">
         {/* Back button */}
         <BackButton/>
       </div>
