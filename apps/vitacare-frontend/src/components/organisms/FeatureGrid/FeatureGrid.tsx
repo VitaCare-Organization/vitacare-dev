@@ -1,27 +1,88 @@
-import FeatureCard from "@/components/molecules/Card/FeatureCard";
-import { ShieldCheck, FileText,  Wallet, Shield, Calendar, Users } from "lucide-react";
+import React from 'react';
+import { Users, FileText, Calendar, CreditCard, Shield, CheckCircle } from 'lucide-react';
 
-const features = [
-  { icon: <Users size={32} />, title: "Role-Based Access", description: "Tailored identities for hospitals, doctors, and patients with appropriate controls." },
-  { icon: <FileText size={32} />, title: "Secure Medical Records", description: "Blockchain-verified medical history with secure sharing controls." },
-  { icon: <Calendar size={32} />, title: "Appointment System", description: "Interactive scheduling with availability management and notifications." },
-  { icon: <Wallet size={32} />, title: "Stellar Payments", description: "Integrated Stellar blockchain wallet for secure and transparent payments." },
-  { icon: <Shield size={32} />, title: "Enhanced Security", description: "Verification-status indicators and encryption for maximum data protection." },
-  { icon: <ShieldCheck size={32} />, title: "Blockchain Verification", description: "Clear indicators for blockchain-verified data and transactions." },
-];
-
- 
-
-export default function FeatureGrid() {
-  return (
-    <div className="bg-[#F1F5F966] py-20 px-6 md:px-0 flex flex-col items-center justify-center">
-        <h1 className="font-bold text-4xl mb-4">Key Features </h1>
-        <p className="text-[#64748B] mb-10">Our platform provides comprehensive healthcare management with blockchain security.</p>
-        <div className="w-[90%] md:w-[80%] lg:w-[65%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
-        ))}
-        </div>
-    </div>
-  );
+interface FeatureItem {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
 }
+
+const KeyFeaturesSection: React.FC = () => {
+  const features: FeatureItem[] = [
+    {
+      icon: <Users className="w-8 h-8 text-blue-500" />,
+      title: "Role-Based Access",
+      description: "Tailored interfaces for hospitals, doctors, and patients with appropriate controls."
+    },
+    {
+      icon: <FileText className="w-8 h-8 text-blue-500" />,
+      title: "Secure Medical Records",
+      description: "Blockchain-verified medical history with secure sharing controls."
+    },
+    {
+      icon: <Calendar className="w-8 h-8 text-blue-500" />,
+      title: "Appointment System",
+      description: "Smart scheduling with availability management and notifications."
+    },
+    {
+      icon: <CreditCard className="w-8 h-8 text-blue-500" />,
+      title: "Stellar Payments",
+      description: "Verified Stellar blockchain wallet for secure and transparent payments."
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-blue-500" />,
+      title: "Enhanced Security",
+      description: "Multi-layered using biometrics and encryption for maximum data protection."
+    },
+    {
+      icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
+      title: "Blockchain Verification",
+      description: "Stellar indicators for blockchain-verified data and transactions."
+    }
+  ];
+
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Key Features
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our platform provides comprehensive healthcare management with blockchain security.
+          </p>
+        </div>
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
+            >
+              {/* Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="p-3 bg-blue-50 rounded-lg">
+                  {feature.icon}
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-xl">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default KeyFeaturesSection;
