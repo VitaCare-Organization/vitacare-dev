@@ -3,7 +3,7 @@ import BackButton from "@/components/atoms/BackButton/BackButton";
 import AccountHeader from "../AccountHeader/AccountHeader";
 import RegistrationForm from "../Forms/RegistrationForm/RegistrationForm";
 
-const HospitalRegistration = () => {
+const Register = () => {
   return (
     <div>
       <div className="min-h-screen flex items-center justify-center p-4">
@@ -24,4 +24,4 @@ const HospitalRegistration = () => {
   );
 };
 
-export default HospitalRegistration;
+export default Register;

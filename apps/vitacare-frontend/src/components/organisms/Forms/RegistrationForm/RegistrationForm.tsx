@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/atoms/ui/Button";
 import FormField from "@/components/molecules/FormField/FormField";
 import TabGroup from "@/components/molecules/TabGroup/TabGroup";
-import { Calendar, BriefcaseMedical, Hospital } from "lucide-react";
+import { Calendar } from "lucide-react";
 import Link from "next/link";
 
 type AccountType = "Patient" | "Doctor" | "Hospital";

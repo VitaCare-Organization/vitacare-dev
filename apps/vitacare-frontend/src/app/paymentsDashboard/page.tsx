@@ -7,7 +7,7 @@ import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
 import FilterButton from "@/components/atoms/Button/FilterButton";
 import CompletedPayments from "@/components/organisms/CompletedPayment/CompletedPayment";
 import StellerPayment from "@/components/organisms/StellarPayment/StellerPayment";
-import TabSwitcher from "@/components/molecules/TabsSwitcher/Tabswitcher";
+import TabSwitcher from "@/components/molecules/TabSwitcher/TabSwitcher";
 import PendingPayments from "@/components/organisms/PendingPayment/PendingPayment";
 
 type Payment = {
