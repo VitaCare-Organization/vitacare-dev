@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Component matches snapshot 1`] = `
+<header
+  class="w-full border-b border-blue-100 px-8 md:px-20 py-4 md:py-3"
+>
+  <div
+    class="container mx-auto px-4 py-4 flex items-center justify-between"
+  >
+    <div
+      class="flex items-center"
+    >
+      <div
+        class="text-blue-500 mr-2"
+      >
+        <div
+          data-testid="shield-icon"
+        >
+          Shield Icon
+        </div>
+      </div>
+      <a
+        href="/"
+      >
+        VitaCare
+      </a>
+    </div>
+    <nav
+      class="hidden md:flex items-center space-x-8"
+    >
+      <a
+        href="/features"
+      >
+        Features
+      </a>
+      <a
+        href="/security"
+      >
+        Security
+      </a>
+      <a
+        href="/about"
+      >
+        About
+      </a>
+    </nav>
+    <div
+      class="flex items-center space-x-4"
+    >
+      <a
+        href="/login"
+      >
+        Log in
+      </a>
+      <a
+        href="/register"
+      >
+        Register
+      </a>
+    </div>
+  </div>
+</header>
+`;
