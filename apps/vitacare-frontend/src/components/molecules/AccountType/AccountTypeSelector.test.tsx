@@ -1,4 +1,3 @@
-
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
@@ -49,17 +48,14 @@ describe("AccountTypeSelector", () => {
     render(<AccountTypeSelector setValue={mockSetValue} />);
 
     fireEvent.click(screen.getByText("Doctor"));
-    const doctorLabel = screen.getByText("Doctor").closest("label");
-    const innerDiv = doctorLabel?.querySelector(".bg-[#0096CC]");
-    expect(innerDiv).toBeInTheDocument();
+
+    const doctorRadio = screen.getByDisplayValue("Doctor");
+    expect(doctorRadio).toBeChecked();
 
     fireEvent.click(screen.getByText("Hospital"));
-    const hospitalLabel = screen.getByText("Hospital").closest("label");
-    const hospitalInnerDiv = hospitalLabel?.querySelector(".bg-[#0096CC]");
-    expect(hospitalInnerDiv).toBeInTheDocument();
 
-    const doctorInnerDivAfterChange =
-      doctorLabel?.querySelector(".bg-[#0096CC]");
-    expect(doctorInnerDivAfterChange).not.toBeInTheDocument();
+    const hospitalRadio = screen.getByDisplayValue("Hospital");
+    expect(hospitalRadio).toBeChecked();
+    expect(doctorRadio).not.toBeChecked();
   });
 });
