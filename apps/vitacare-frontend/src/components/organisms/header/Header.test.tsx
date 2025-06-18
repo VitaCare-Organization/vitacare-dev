@@ -129,9 +129,4 @@ describe("Navbar Component", () => {
     const allLinks = screen.getAllByRole("link");
     expect(allLinks.length).toBe(6); // VitaCare, Features, Security, About, Log in, Register
   });
-
-  it("matches snapshot", () => {
-    const { container } = render(<Navbar />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
 });

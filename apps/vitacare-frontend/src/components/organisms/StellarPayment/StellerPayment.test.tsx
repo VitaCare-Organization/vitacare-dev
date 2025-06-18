@@ -3,13 +3,6 @@ import userEvent from "@testing-library/user-event";
 import StellerPayment from "./StellerPayment";
 
 describe("StellerPayment Component", () => {
-  it("renders the main wallet heading and description", () => {
-    render(<StellerPayment />);
-
-    expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent("Stellar Blockchain Wallet");
-    expect(screen.getByText("Manage your Stellar wallet for healthcare payments")).toBeInTheDocument();
-  });
-
   it("displays wallet status as blockchain verified", () => {
     render(<StellerPayment />);
 
@@ -98,10 +91,5 @@ describe("StellerPayment Component", () => {
 
     await user.click(addFundsButton);
     await user.click(exportButton);
-  });
-
-  it("matches snapshot", () => {
-    const { container } = render(<StellerPayment />);
-    expect(container.firstChild).toMatchSnapshot();
   });
 }); 

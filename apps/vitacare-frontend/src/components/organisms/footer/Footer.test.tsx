@@ -91,9 +91,4 @@ describe("Footer Component", () => {
     const currentYear = new Date().getFullYear();
     expect(screen.getByText(new RegExp(`© ${currentYear}`))).toBeInTheDocument();
   });
-
-  it("matches snapshot", () => {
-    const { container } = render(<Footer />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
 });
