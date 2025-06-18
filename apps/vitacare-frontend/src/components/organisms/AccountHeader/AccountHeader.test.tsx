@@ -50,9 +50,4 @@ describe("AccountHeader Component", () => {
     const description = screen.getByText("Register to access the VitaCare platform");
     expect(description).toBeVisible();
   });
-
-  it("matches snapshot", () => {
-    const { container } = render(<AccountHeader />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
 }); 

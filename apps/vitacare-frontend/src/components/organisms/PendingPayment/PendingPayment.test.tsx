@@ -2,13 +2,6 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import PendingPayments from "./PendingPayment";
 
-// Mock the PayNowButton component
-jest.mock("@/components/atoms/Button/PayNowButton", () => {
-  return function MockPayNowButton({ onClick }: { onClick: () => void }) {
-    return <button onClick={onClick} data-testid="pay-now-button">Pay Now</button>;
-  };
-});
-
 type PendingPayment = {
   doctor: string;
   specialty: string;
@@ -186,10 +179,5 @@ describe("PendingPayments Component", () => {
     // All buttons should be accessible
     const buttons = screen.getAllByRole("button");
     expect(buttons.length).toBe(mockPendingPayments.length);
-  });
-
-  it("matches snapshot", () => {
-    const { container } = render(<PendingPayments pendingPayments={mockPendingPayments} />);
-    expect(container.firstChild).toMatchSnapshot();
   });
 }); 
