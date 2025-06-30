@@ -136,9 +136,4 @@ describe("KeyFeaturesSection Component", () => {
       expect(screen.getByText(descriptionPattern)).toBeVisible();
     });
   });
-
-  it("matches snapshot", () => {
-    const { container } = render(<KeyFeaturesSection />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
 }); 

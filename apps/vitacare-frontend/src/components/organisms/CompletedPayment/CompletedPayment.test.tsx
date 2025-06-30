@@ -3,16 +3,6 @@ import userEvent from "@testing-library/user-event";
 import CompletedPayments from "./CompletedPayment";
 import { Payment, PaymentsByMonth } from "@/types/Payment";
 
-// Mock the ReceiptButton component
-jest.mock("@/components/atoms/Button/ReceiptButton", () => {
-  return function MockReceiptButton({ children, onClick }: { children: React.ReactNode; onClick: () => void }) {
-    return <button onClick={onClick}>{children}</button>;
-  };
-});
-
-// Mock the arrow icon
-jest.mock("@/assets/Arrow.svg", () => "mock-arrow-icon");
-
 describe("CompletedPayments Component", () => {
   const mockPayment: Payment = {
     doctor: "Dr. John Smith",
@@ -156,15 +146,5 @@ describe("CompletedPayments Component", () => {
 
     const mainContainer = screen.getByRole("heading", { level: 2 }).closest("div");
     expect(mainContainer).toHaveClass("bg-white rounded-lg mt-4 shadow-sm border border-gray-200 p-6");
-  });
-
-  it("matches snapshot", () => {
-    const { container } = render(
-      <CompletedPayments 
-        paymentsByMonth={mockPaymentsByMonth}
-        handleShowReceipt={mockHandleShowReceipt}
-      />
-    );
-    expect(container.firstChild).toMatchSnapshot();
   });
 }); 

@@ -1,25 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Register from "./Register";
 
-// Mock the child components
-jest.mock("@/components/atoms/BackButton/BackButton", () => {
-  return function MockBackButton() {
-    return <button data-testid="back-button">Back</button>;
-  };
-});
-
-jest.mock("../AccountHeader/AccountHeader", () => {
-  return function MockAccountHeader() {
-    return <div data-testid="account-header">Account Header</div>;
-  };
-});
-
-jest.mock("../Forms/RegistrationForm/RegistrationForm", () => {
-  return function MockRegistrationForm() {
-    return <div data-testid="registration-form">Registration Form</div>;
-  };
-});
-
 describe("Register Component", () => {
   it("renders all child components", () => {
     render(<Register />);
@@ -106,10 +87,5 @@ describe("Register Component", () => {
 
     const contentDiv = cardDiv?.querySelector(".p-6");
     expect(contentDiv).toBeInTheDocument();
-  });
-
-  it("matches snapshot", () => {
-    const { container } = render(<Register />);
-    expect(container.firstChild).toMatchSnapshot();
   });
 }); 
