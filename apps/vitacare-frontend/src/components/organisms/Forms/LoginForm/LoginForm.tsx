@@ -24,6 +24,9 @@ const LoginForm = () => {
   } = useForm<LoginFormData>({
     resolver: zodResolver(LoginFormSchema),
     mode: "onChange",
+    defaultValues: {
+      accountType: "Patient",
+    },
   });
 
   const selectedAccountType = watch("accountType");
@@ -37,7 +40,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center w-full">
+    <div className="min-h-screen flex justify-center items-center w-full my-5">
       <div className="space-y-4 py-6 md:py-10 px-4 xl:py-0 xl:px-0 w-full">
         <div className="text-center flex flex-col gap-2">
           <Image
@@ -108,7 +111,7 @@ const LoginForm = () => {
 
           <div className="flex justify-center text-sm items-center">
             <p className="text-[#A1A1AA]">
-              <p>Don&apos;t have an account?</p>
+              <span>Don&apos;t have an account?</span>
               <Link className="text-sm hover:underline text-[#0096CC]" href="/">
                 Sign up
               </Link>
