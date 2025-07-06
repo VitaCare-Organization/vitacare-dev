@@ -10,6 +10,7 @@ const PayNowButton: React.FC<PayNowButtonProps> = ({ onClick, className = '' }) 
     <button 
       onClick={onClick}
       className={`px-4 py-1.5 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition-colors ${className}`}
+      data-testid="pay-now-button"
     >
       Pay Now
     </button>

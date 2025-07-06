@@ -380,7 +380,7 @@ export default function RegistrationForm() {
           </Button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4" data-testid="registration-form">
           {formError && (
             <div className="bg-red-50 border border-red-200 rounded-md p-3 text-red-700 text-sm">
               {formError}
