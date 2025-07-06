@@ -27,7 +27,7 @@ describe("TabGroup", () => {
   });
 
   it("sets first tab as active by default", () => {
-    const { container } = render(<TabGroup tabs={mockTabs} />);
+    render(<TabGroup tabs={mockTabs} />);
     
     // The first tab should be passed isActive=true
     const firstTabButton = screen.getByText(mockTabs[0]);
@@ -50,7 +50,7 @@ describe("TabGroup", () => {
   });
 
   it("changes active tab on click", () => {
-    const { rerender } = render(<TabGroup tabs={mockTabs} />);
+    render(<TabGroup tabs={mockTabs} />);
    
     const targetTab = screen.getByText(mockTabs[2]);
     fireEvent.click(targetTab);

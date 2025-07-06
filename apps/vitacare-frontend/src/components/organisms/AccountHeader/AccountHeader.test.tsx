@@ -16,11 +16,11 @@ describe("AccountHeader Component", () => {
     render(<AccountHeader />);
     
     // Check for the icon container
-    const iconContainer = screen.getByRole("heading", { level: 1 }).closest("div")?.querySelector("div > div");
+    const iconContainer = screen.getByTestId("account-header").querySelector('.w-10.h-10');
     expect(iconContainer).toHaveClass("w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center");
     
     // Check for SVG presence
-    const svg = screen.getByRole("heading", { level: 1 }).closest("div")?.querySelector("svg");
+    const svg = iconContainer?.querySelector("svg");
     expect(svg).toBeInTheDocument();
     expect(svg).toHaveAttribute("width", "24");
     expect(svg).toHaveAttribute("height", "24");

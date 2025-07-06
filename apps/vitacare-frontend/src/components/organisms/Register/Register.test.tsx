@@ -71,20 +71,26 @@ describe("Register Component", () => {
     render(<Register />);
 
     // Check for responsive padding classes
-    const contentContainer = screen.getByTestId("back-button").closest(".p-6");
-    expect(contentContainer).toHaveClass("p-6 md:p-8");
+    let node = screen.getByTestId("back-button").parentElement;
+    while (node && !node.className.includes("p-6")) {
+      node = node.parentElement;
+    }
+    expect(node).toHaveClass("p-6 md:p-8");
   });
 
   it("maintains proper component hierarchy", () => {
     render(<Register />);
 
-    const mainDiv = screen.getByTestId("back-button").closest("div");
-    const containerDiv = mainDiv?.querySelector(".min-h-screen");
-    expect(containerDiv).toBeInTheDocument();
+    let node = screen.getByTestId("back-button").parentElement;
+    while (node && !node.className.includes("min-h-screen")) {
+      node = node.parentElement;
+    }
+    expect(node).toBeInTheDocument();
 
-    const cardDiv = containerDiv?.querySelector(".bg-white");
+    const cardDiv = node?.querySelector(".bg-white");
     expect(cardDiv).toBeInTheDocument();
 
+    
     const contentDiv = cardDiv?.querySelector(".p-6");
     expect(contentDiv).toBeInTheDocument();
   });
