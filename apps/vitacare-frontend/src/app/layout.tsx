@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/organisms/Footer/Footer";
+import Footer from "@/components/organisms/Footer/footer";
 import Navbar from "@/components/organisms/Header/Header";
 import { UserProvider } from "@/context/userContext";
 
