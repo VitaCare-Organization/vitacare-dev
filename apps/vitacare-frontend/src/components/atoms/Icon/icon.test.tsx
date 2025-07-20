@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Icon from "./Icon";
+import Icon from "./icon";
 
 describe("Icon Component", () => {
   test("renders with children content", () => {

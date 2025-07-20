@@ -1,4 +1,4 @@
-import LoginForm from "@/components/organisms/Forms/LoginForm/LoginForm";
+import LoginForm from "@/components/organisms/Forms/LoginForm/loginForm";
 import React from "react";
 
 export default function page() {

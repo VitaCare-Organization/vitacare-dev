@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Tab from "@/components/atoms/Tab/Tab"
+import Tab from "@/components/atoms/Tab/tab"
 
 interface TabGroupProps {
   tabs: string[]

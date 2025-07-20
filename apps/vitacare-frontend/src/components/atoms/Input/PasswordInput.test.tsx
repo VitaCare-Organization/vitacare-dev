@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import PasswordInput from "./PasswordInput";
+import PasswordInput from "./passwordInput";
 
 jest.mock("lucide-react", () => ({
   Eye: () => <div data-testid="eye-icon" />,

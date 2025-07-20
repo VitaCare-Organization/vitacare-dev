@@ -1,9 +1,9 @@
 "use client";
 import type React from "react";
 import { useState } from "react";
-import { Button } from "@/components/atoms/ui/Button";
-import FormField from "@/components/molecules/FormField/FormField";
-import TabGroup from "@/components/molecules/TabGroup/TabGroup";
+import { Button } from "@/components/atoms/ui/button";
+import FormField from "@/components/molecules/FormField/formField";
+import TabGroup from "@/components/molecules/TabGroup/tabGroup";
 import { Calendar } from "lucide-react";
 import Link from "next/link";
 

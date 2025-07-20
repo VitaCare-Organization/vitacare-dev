@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import FeatureCard from "./FeatureCard";
+import FeatureCard from "./featureCard";
 
 describe("FeatureCard", () => {
   const mockIcon = <svg data-testid="mock-icon" />;

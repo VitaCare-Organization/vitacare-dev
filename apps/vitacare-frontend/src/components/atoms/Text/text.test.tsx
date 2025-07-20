@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Heading, Description } from "./Text";
+import { Heading, Description } from "./text";
 
 describe("Text Components", () => {
   describe("Heading Component", () => {

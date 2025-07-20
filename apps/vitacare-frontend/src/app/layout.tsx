@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/organisms/Footer/footer";
-import Navbar from "@/components/organisms/Header/Header";
+import Navbar from "@/components/organisms/Header/header";
 import { UserProvider } from "@/context/userContext";
 
 export const metadata: Metadata = {

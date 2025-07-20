@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import AccountTypeSelector from "./AccountTypeSelector";
+import AccountTypeSelector from "./accountTypeSelector";
 
 describe("AccountTypeSelector", () => {
   const mockSetValue = jest.fn();

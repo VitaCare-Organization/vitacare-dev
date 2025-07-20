@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import KeyFeaturesSection from "./FeatureGrid";
+import KeyFeaturesSection from "./featureGrid";
 
 // Mock lucide-react icons
 jest.mock("lucide-react", () => ({

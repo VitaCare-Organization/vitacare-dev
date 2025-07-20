@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import TabGroup from "./TabGroup";
+import TabGroup from "./tabGroup";
 
 describe("TabGroup", () => {
   const mockTabs = ["Tab 1", "Tab 2", "Tab 3"];

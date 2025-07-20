@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import AccountHeader from "./AccountHeader";
+import AccountHeader from "./accountHeader";
 
 describe("AccountHeader Component", () => {
   it("renders correctly with all elements", () => {

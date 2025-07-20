@@ -1,7 +1,6 @@
-
 import React from "react";
-import { Payment, PaymentsByMonth } from "@/types/Payment";
-import ReceiptButton from "@/components/atoms/Button/ReceiptButton";
+import { Payment, PaymentsByMonth } from "@/types/payment";
+import ReceiptButton from "@/components/atoms/Button/receiptButton";
 import arrowIcon from "@/assets/Arrow.svg";
 
 

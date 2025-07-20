@@ -2,13 +2,13 @@
 import React, { useState } from "react";
 import { PlusIcon, CreditCardIcon } from "@heroicons/react/24/outline";
 import filterIcon from "@/assets/Frame.svg";
-import PaymentButton from "@/components/atoms/Button/PaymentButton";
-import ConnectWalletButton from "@/components/atoms/Button/ConnectWalletButton";
-import FilterButton from "@/components/atoms/Button/FilterButton";
-import CompletedPayments from "@/components/organisms/CompletedPayment/CompletedPayment";
-import StellerPayment from "@/components/organisms/StellarPayment/StellerPayment";
-import TabSwitcher from "@/components/molecules/TabSwitcher/TabSwitcher";
-import PendingPayments from "@/components/organisms/PendingPayment/PendingPayment";
+import PaymentButton from "@/components/atoms/Button/paymentButton";
+import ConnectWalletButton from "@/components/atoms/Button/connectWalletButton";
+import FilterButton from "@/components/atoms/Button/filterButton";
+import CompletedPayments from "@/components/organisms/CompletedPayment/completedPayment";
+import StellerPayment from "@/components/organisms/StellarPayment/stellerPayment";
+import TabSwitcher from "@/components/molecules/TabSwitcher/tabSwitcher";
+import PendingPayments from "@/components/organisms/PendingPayment/pendingPayment";
 
 type Payment = {
   doctor: string;

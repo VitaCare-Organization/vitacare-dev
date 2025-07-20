@@ -1,6 +1,6 @@
 
-import Icon from "@/components/atoms/Icon/Icon";
-import { Description, Heading } from "@/components/atoms/Text/Text";
+import Icon from "@/components/atoms/Icon/icon";
+import { Description, Heading } from "@/components/atoms/Text/text";
 import { ReactNode } from "react";
 
 interface FeatureCardProps {

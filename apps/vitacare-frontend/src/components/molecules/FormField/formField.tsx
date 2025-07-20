@@ -2,8 +2,8 @@
 
 import type React from "react"
 import type { ReactNode } from "react"
-import { Label } from "@/components/atoms/ui/Label"
-import { Input } from "@/components/atoms/ui/Input"
+import { Label } from "@/components/atoms/ui/label"
+import { Input } from "@/components/atoms/ui/input"
 
 interface FormFieldProps {
   label: string

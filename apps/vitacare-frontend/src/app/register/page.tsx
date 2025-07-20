@@ -1,5 +1,5 @@
 import React from 'react'
-import HospitalRegistration from '@/components/organisms/Register/Register'
+import HospitalRegistration from '@/components/organisms/Register/register'
 const page = () => {
   return (
     <div>

@@ -1,7 +1,7 @@
 import React from "react";
-import BackButton from "@/components/atoms/BackButton/BackButton";
-import AccountHeader from "../AccountHeader/AccountHeader";
-import RegistrationForm from "../Forms/RegistrationForm/RegistrationForm";
+import BackButton from "@/components/atoms/BackButton/backButton";
+import AccountHeader from "../AccountHeader/accountHeader";
+import RegistrationForm from "../Forms/RegistrationForm/registrationForm";
 
 const Register = () => {
   return (

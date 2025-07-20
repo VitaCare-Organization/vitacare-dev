@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import StellerPayment from "./StellerPayment";
+import StellerPayment from "./stellerPayment";
 
 describe("StellerPayment Component", () => {
   it("displays wallet status as blockchain verified", () => {

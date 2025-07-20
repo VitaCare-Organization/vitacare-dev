@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import CompletedPayments from "./CompletedPayment";
-import { Payment, PaymentsByMonth } from "@/types/Payment";
+import CompletedPayments from "./completedPayment";
+import { Payment, PaymentsByMonth } from "@/types/payment";
 
 describe("CompletedPayments Component", () => {
   const mockPayment: Payment = {

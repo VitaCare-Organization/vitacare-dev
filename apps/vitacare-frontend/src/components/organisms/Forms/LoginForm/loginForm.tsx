@@ -2,13 +2,13 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { LoginFormSchema } from "@/schemas/LoginFormSchema";
+import { LoginFormSchema } from "@/schemas/loginFormSchema";
 import { z } from "zod";
-import Input from "@/components/atoms/Input/Input";
-import { Button } from "@/components/atoms/Button/Button";
+import Input from "@/components/atoms/Input/input";
+import { Button } from "@/components/atoms/Button/button";
 import Link from "next/link";
-import PasswordInput from "@/components/atoms/Input/PasswordInput";
-import AccountTypeSelector from "@/components/molecules/AccountType/AccountTypeSelector";
+import PasswordInput from "@/components/atoms/Input/passwordInput";
+import AccountTypeSelector from "@/components/molecules/AccountType/accountTypeSelector";
 import Image from "next/image";
 import badgeicon from "@/components/atoms/icons/badgeicon.svg";
 

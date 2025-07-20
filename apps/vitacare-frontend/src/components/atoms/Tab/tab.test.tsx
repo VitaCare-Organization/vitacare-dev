@@ -5,7 +5,7 @@ jest.mock("../../../lib/utils.ts", () => ({
   cn: jest.fn((...classes: string[]) => classes.filter(Boolean).join(" ")),
 }));
 
-import Tab from "./Tab";
+import Tab from "./tab";
 
 describe("Tab Component", () => {
   test("renders with label text", () => {

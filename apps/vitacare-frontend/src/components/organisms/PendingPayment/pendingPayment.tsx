@@ -1,5 +1,5 @@
 import React from 'react';
-import PayNowButton from '@/components/atoms/Button/PayNowButton';
+import PayNowButton from '@/components/atoms/Button/payNowButton';
 
 type PendingPayment = {
   doctor: string;
